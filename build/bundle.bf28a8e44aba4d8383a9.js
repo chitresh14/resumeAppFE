@@ -72,65 +72,46 @@
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = appConfig;
-// 'use strict';
-// angular.
-// module('profileApp').
-// config(['$routeProvider', '$locationProvider',
-//     function config($routeProvider, $locationProvider) {
-//         $locationProvider.html5Mode(true).hashPrefix('*');
-//         $routeProvider.
-//         when('/signin', {
-//             template: '<main-app></main-app>'
-//         }).
-//         when('/masterAdmin', {
-//             template: '<master-admin-component style="background-color: #f5f5f5;"></master-admin-component>'
-//         }).
-//         when('/avatarUpload', {
-//             template: '<avatar-upload-component></avatar-upload-component>'
-//         }).
-//         otherwise('/signin');
-//     }
-// ]);
+
+
 function appConfig($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true).hashPrefix('*');
   $routeProvider.when('/signin', {
-    template: '<main-app></main-app>'
+    template: '<main-app-component></main-app-component>'
   }).otherwise('/signin');
 }
 appConfig.$inject = ['$routeProvider', '$locationProvider'];
 
 /***/ }),
 /* 1 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-/* harmony default export */ __webpack_exports__["a"] = (angular.module('mainModule', []));
+// 'use strict';
+angular.module('mainModule', []);
 
 /***/ }),
 /* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
  // Register mainApp component, along with its associated controller and template.
 
-/* unused harmony default export */ var _unused_webpack_default_export = (angular.module('mainModule').component('mainApp', {
-  template: './src/profileApp/profile_main.html',
-  controller: [function mainAppController() {
+angular.module('mainModule').component('mainAppComponent', {
+  templateUrl: '/src/profileApp/profile_main.html',
+  controller: [function mainAppComponentController() {
     var mainAppVm = this;
     mainAppVm.screenHeight = window.screen.height;
   }]
-}));
+});
 
 /***/ }),
 /* 3 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
- // Register `mainApp` component, along with its associated controller and template
+ // Register `signUpComponent` component, along with its associated controller and template
 
-angular.module('mainModule').component('signInComponent', {
+/* unused harmony default export */ var _unused_webpack_default_export = (angular.module('mainModule').component('signInComponent', {
   templateUrl: '/src/profileApp/signin.component/signin.component.html',
   controller: [function signInController() {
     var signInVm = this;
@@ -140,19 +121,18 @@ angular.module('mainModule').component('signInComponent', {
       signInVm.isSignInVisibile = isSignInView;
     };
   }]
-});
+}));
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
- // Register `mainApp` component, along with its associated controller and template
+ // Register `signUpComponent` component, along with its associated controller and template
 
 angular.module('mainModule', []).component('signUpComponent', {
   templateUrl: '/src/profileApp/signup.component/signup.component.html',
   controller: [function signUpController() {
-    console.log(registerUser);
     var signUpVm = this;
     signUpVm.email = null;
     signUpVm.username = null;
@@ -193,22 +173,17 @@ angular.module('mainModule', []).component('signUpComponent', {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_route_js__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__src_profileApp_main_module_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_profileApp_profile_main_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_profileApp_main_module_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__src_profileApp_main_module_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__src_profileApp_main_module_js__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_route_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_profileApp_signup_component_signup_component_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__src_profileApp_signup_component_signup_component_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__src_profileApp_signup_component_signup_component_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_profileApp_signin_component_signin_component_js__ = __webpack_require__(3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__src_profileApp_signin_component_signin_component_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__src_profileApp_signin_component_signin_component_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_profileApp_signup_component_signup_component_js__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_profileApp_signup_component_signup_component_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__src_profileApp_signup_component_signup_component_js__);
- // //*********************Application dependent imports*******************************
-// import jquery from './assets/bootstrap-4.5.0-dist/jquery/jquery_3.5.1.js';
-// import bootstrapMin from './assets/bootstrap-4.5.0-dist/js/bootstrap.min.js';
-// import bootstrap from './assets/bootstrap-4.5.0-dist/js/bootstrap.js';
-// import angularjs from './assets/angularjs/angular.min.js';
-// import angularRoute from './assets/angularjs/angular-route.min.js';
-// import angularResource from './assets/angularjs/angular-resource.min.js';
-// import angularSantize from './assets/angularjs/angular-sanitize.min.js';
-//***************Custom imports *************************
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_profileApp_profile_main_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__src_profileApp_profile_main_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__src_profileApp_profile_main_js__);
+ //***************Custom imports *************************
+// Note: import Should be in reverse order of its dependencies i.e Child to Parnet 
+//(It should as per the module of angularjs)
 
 
 
@@ -216,8 +191,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
  //Define the starting module of application.
 
-console.log(__WEBPACK_IMPORTED_MODULE_1__src_profileApp_main_module_js__["a" /* default */]);
-angular.module('profileApp', ['ngRoute', 'mainModule']).config(__WEBPACK_IMPORTED_MODULE_0__app_route_js__["a" /* default */]);
+console.log(__WEBPACK_IMPORTED_MODULE_0__src_profileApp_main_module_js___default.a);
+angular.module('profileApp', ['ngRoute', 'mainModule']).config(__WEBPACK_IMPORTED_MODULE_1__app_route_js__["a" /* default */]);
 
 /***/ })
 /******/ ]);

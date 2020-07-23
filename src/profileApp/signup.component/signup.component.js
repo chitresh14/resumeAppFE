@@ -1,6 +1,6 @@
 'use strict';
 
-// Register `mainApp` component, along with its associated controller and template
+// Register `signUpComponent` component, along with its associated controller and template
 angular.
 module('mainModule',[]).
 component('signUpComponent', {
@@ -8,7 +8,6 @@ component('signUpComponent', {
     controller: [
         function signUpController() {
 
-            console.log(registerUser);
             var signUpVm = this;
             signUpVm.email = null;
             signUpVm.username = null;

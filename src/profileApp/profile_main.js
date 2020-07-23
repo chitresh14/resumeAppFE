@@ -1,15 +1,15 @@
 'use strict';
 
 // Register mainApp component, along with its associated controller and template.
-export default angular.
-  module('mainModule').
-  component('mainApp', {
-    template: './src/profileApp/profile_main.html',
+
+angular.
+module('mainModule').
+component('mainAppComponent', {
+    templateUrl: '/src/profileApp/profile_main.html',
     controller: [
-      function mainAppController() {
-      	var mainAppVm = this;
-      	mainAppVm.screenHeight = window.screen.height;
-      	
-      }
+        function mainAppComponentController() {
+            var mainAppVm = this;
+            mainAppVm.screenHeight = window.screen.height;
+        }
     ]
-  });
+});

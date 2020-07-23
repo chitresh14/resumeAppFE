@@ -1,7 +1,7 @@
 'use strict';
 
-// Register `mainApp` component, along with its associated controller and template
-angular.
+// Register `signUpComponent` component, along with its associated controller and template
+export default angular.
 module('mainModule').
 component('signInComponent', {
     templateUrl: '/src/profileApp/signin.component/signin.component.html',

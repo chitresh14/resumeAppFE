@@ -1,3 +1,3 @@
-'use strict';
+// 'use strict';
 
-export default angular.module('mainModule', []);
+angular.module('mainModule', []);

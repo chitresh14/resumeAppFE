@@ -12,11 +12,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // ];
 
 const webpackConfig = {
-    // entry: {
-    //     bundle: './app.module.js'
-    //     // vendor: VENDOR_LIBS
-    // },
-    entry: './app.module.js',
+    entry: {
+        bundle: './app.module.js'
+        // vendor: VENDOR_LIBS
+    },
+    // entry: './app.module.js',
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: '[name].[chunkhash].js',
